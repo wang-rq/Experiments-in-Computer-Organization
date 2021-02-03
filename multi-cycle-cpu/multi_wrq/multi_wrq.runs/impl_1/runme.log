@@ -1,0 +1,528 @@
+
+*** Running vivado
+    with args -log basys.vdi -applog -m64 -messageDb vivado.pb -mode batch -source basys.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source basys.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/DELL/Desktop/multi_wrq/multi_wrq.srcs/constrs_1/imports/code_task4/cons.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/multi_wrq/multi_wrq.srcs/constrs_1/imports/code_task4/cons.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 518.891 ; gain = 328.316
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.400 . Memory (MB): peak = 521.961 ; gain = 3.070
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: aa3ec2b1
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 15e73a12b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.953 . Memory (MB): peak = 967.840 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 15e73a12b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 967.840 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 165 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 1a5580da3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 967.840 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 967.840 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1a5580da3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 967.840 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1a5580da3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.245 . Memory (MB): peak = 967.840 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 967.840 ; gain = 448.949
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.490 . Memory (MB): peak = 967.840 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/DELL/Desktop/multi_wrq/multi_wrq.runs/impl_1/basys_drc_opted.rpt.
+INFO: [Vivado_Tcl 4-424] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 967.840 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 967.840 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: 96a44d67
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 967.840 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: 96a44d67
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 96a44d67
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: dad86b62
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15ae81288
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+Phase 1.2.1 Place Init Design | Checksum: 22f5f4aef
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 1.2 Build Placer Netlist Model | Checksum: 22f5f4aef
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 1.3 Constrain Clocks/Macros
+
+Phase 1.3.1 Constrain Global/Regional Clocks
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 22f5f4aef
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 1.3 Constrain Clocks/Macros | Checksum: 22f5f4aef
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 1 Placer Initialization | Checksum: 22f5f4aef
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 16c6b7658
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 16c6b7658
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1a4766d06
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1bfd6aad3
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.4 Small Shape Detail Placement
+
+Phase 3.4.1 Commit Small Macros and Core Logic
+
+Phase 3.4.1.1 Commit Slice Clusters
+Phase 3.4.1.1 Commit Slice Clusters | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 3.4.1 Commit Small Macros and Core Logic | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 3.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 3.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 3.4 Small Shape Detail Placement | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 3.5 Re-assign LUT pins
+Phase 3.5 Re-assign LUT pins | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 3 Detail Placement | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 1349b1b7e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 984.289 ; gain = 16.449
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 12da5a474
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 984.289 ; gain = 16.449
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 12da5a474
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 984.289 ; gain = 16.449
+Ending Placer Task | Checksum: fa0e164e
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 984.289 ; gain = 16.449
+INFO: [Common 17-83] Releasing license: Implementation
+35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 984.289 ; gain = 16.449
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 984.289 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.155 . Memory (MB): peak = 984.289 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.190 . Memory (MB): peak = 984.289 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 984.289 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 80f3e632 ConstDB: 0 ShapeSum: 791a301c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 13ee5b3c4
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 1071.430 ; gain = 87.141
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: 13ee5b3c4
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:58 . Memory (MB): peak = 1076.074 ; gain = 91.785
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 73f421f7
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:59 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: a3e48c4d
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:01 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 996
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+Phase 4 Rip-up And Reroute | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.79965 %
+  Global Horizontal Routing Utilization  = 2.14524 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 41.4414%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 47.7477%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 51.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 51.4706%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 3e67836d
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:04 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: a1b4e859
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 1081.004 ; gain = 96.715
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:05 . Memory (MB): peak = 1081.004 ; gain = 96.715
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:08 . Memory (MB): peak = 1081.004 ; gain = 96.715
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 1081.004 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/DELL/Desktop/multi_wrq/multi_wrq.runs/impl_1/basys_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/IR_/E[0] is a gated clock net sourced by a combinational pin Top_/IR_/nextstate_reg[2]_i_2/O, cell Top_/IR_/nextstate_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/IR_/register_reg[30][31]_8 is a gated clock net sourced by a combinational pin Top_/IR_/temp_reg[32]_i_2/O, cell Top_/IR_/temp_reg[32]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[0]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[0]_LDC_i_1/O, cell Top_/PC_/IRout_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[10]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[10]_LDC_i_1/O, cell Top_/PC_/IRout_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[11]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[11]_LDC_i_1/O, cell Top_/PC_/IRout_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[12]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[12]_LDC_i_1/O, cell Top_/PC_/IRout_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[13]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[13]_LDC_i_1/O, cell Top_/PC_/IRout_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[14]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[14]_LDC_i_1/O, cell Top_/PC_/IRout_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[15]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[15]_LDC_i_1/O, cell Top_/PC_/IRout_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[16]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[16]_LDC_i_1/O, cell Top_/PC_/IRout_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[17]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[17]_LDC_i_1/O, cell Top_/PC_/IRout_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[18]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[18]_LDC_i_1/O, cell Top_/PC_/IRout_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[19]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[19]_LDC_i_1/O, cell Top_/PC_/IRout_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[1]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[1]_LDC_i_1/O, cell Top_/PC_/IRout_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[20]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[20]_LDC_i_1/O, cell Top_/PC_/IRout_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[21]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[21]_LDC_i_1/O, cell Top_/PC_/IRout_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[22]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[22]_LDC_i_1/O, cell Top_/PC_/IRout_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[23]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[23]_LDC_i_1/O, cell Top_/PC_/IRout_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[24]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[24]_LDC_i_1/O, cell Top_/PC_/IRout_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[25]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[25]_LDC_i_1/O, cell Top_/PC_/IRout_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[26]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[26]_LDC_i_1/O, cell Top_/PC_/IRout_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[27]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[27]_LDC_i_1/O, cell Top_/PC_/IRout_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[28]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[28]_LDC_i_1/O, cell Top_/PC_/IRout_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[29]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[29]_LDC_i_1/O, cell Top_/PC_/IRout_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[2]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[2]_LDC_i_1/O, cell Top_/PC_/IRout_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[30]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[30]_LDC_i_1/O, cell Top_/PC_/IRout_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[31]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[31]_LDC_i_1/O, cell Top_/PC_/IRout_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[3]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[3]_LDC_i_1/O, cell Top_/PC_/IRout_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[4]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[4]_LDC_i_1/O, cell Top_/PC_/IRout_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[5]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[5]_LDC_i_1/O, cell Top_/PC_/IRout_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[6]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[6]_LDC_i_1/O, cell Top_/PC_/IRout_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[7]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[7]_LDC_i_1/O, cell Top_/PC_/IRout_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[8]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[8]_LDC_i_1/O, cell Top_/PC_/IRout_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[9]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[9]_LDC_i_1/O, cell Top_/PC_/IRout_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 35 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./basys.bit...
+Writing bitstream ./basys.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 1447.797 ; gain = 337.813
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file basys.hwdef
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 01:04:33 2019...
+
+*** Running vivado
+    with args -log basys.vdi -applog -m64 -messageDb vivado.pb -mode batch -source basys.tcl -notrace
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source basys.tcl -notrace
+Command: open_checkpoint basys_routed.dcp
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/DELL/Desktop/multi_wrq/multi_wrq.runs/impl_1/.Xil/Vivado-302296-/dcp/basys.xdc]
+Finished Parsing XDC File [C:/Users/DELL/Desktop/multi_wrq/multi_wrq.runs/impl_1/.Xil/Vivado-302296-/dcp/basys.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 518.789 ; gain = 0.516
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 518.789 ; gain = 0.516
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2015.4 (64-bit) build 1412921
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 518.809 ; gain = 330.473
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-1223] The version limit for your license is '2019.06' and will expire in -165 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/IR_/E[0] is a gated clock net sourced by a combinational pin Top_/IR_/nextstate_reg[2]_i_2/O, cell Top_/IR_/nextstate_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/IR_/register_reg[30][31]_8 is a gated clock net sourced by a combinational pin Top_/IR_/temp_reg[32]_i_2/O, cell Top_/IR_/temp_reg[32]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[0]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[0]_LDC_i_1/O, cell Top_/PC_/IRout_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[10]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[10]_LDC_i_1/O, cell Top_/PC_/IRout_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[11]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[11]_LDC_i_1/O, cell Top_/PC_/IRout_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[12]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[12]_LDC_i_1/O, cell Top_/PC_/IRout_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[13]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[13]_LDC_i_1/O, cell Top_/PC_/IRout_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[14]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[14]_LDC_i_1/O, cell Top_/PC_/IRout_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[15]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[15]_LDC_i_1/O, cell Top_/PC_/IRout_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[16]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[16]_LDC_i_1/O, cell Top_/PC_/IRout_reg[16]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[17]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[17]_LDC_i_1/O, cell Top_/PC_/IRout_reg[17]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[18]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[18]_LDC_i_1/O, cell Top_/PC_/IRout_reg[18]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[19]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[19]_LDC_i_1/O, cell Top_/PC_/IRout_reg[19]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[1]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[1]_LDC_i_1/O, cell Top_/PC_/IRout_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[20]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[20]_LDC_i_1/O, cell Top_/PC_/IRout_reg[20]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[21]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[21]_LDC_i_1/O, cell Top_/PC_/IRout_reg[21]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[22]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[22]_LDC_i_1/O, cell Top_/PC_/IRout_reg[22]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[23]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[23]_LDC_i_1/O, cell Top_/PC_/IRout_reg[23]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[24]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[24]_LDC_i_1/O, cell Top_/PC_/IRout_reg[24]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[25]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[25]_LDC_i_1/O, cell Top_/PC_/IRout_reg[25]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[26]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[26]_LDC_i_1/O, cell Top_/PC_/IRout_reg[26]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[27]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[27]_LDC_i_1/O, cell Top_/PC_/IRout_reg[27]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[28]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[28]_LDC_i_1/O, cell Top_/PC_/IRout_reg[28]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[29]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[29]_LDC_i_1/O, cell Top_/PC_/IRout_reg[29]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[2]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[2]_LDC_i_1/O, cell Top_/PC_/IRout_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[30]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[30]_LDC_i_1/O, cell Top_/PC_/IRout_reg[30]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[31]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[31]_LDC_i_1/O, cell Top_/PC_/IRout_reg[31]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[3]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[3]_LDC_i_1/O, cell Top_/PC_/IRout_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[4]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[4]_LDC_i_1/O, cell Top_/PC_/IRout_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[5]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[5]_LDC_i_1/O, cell Top_/PC_/IRout_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[6]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[6]_LDC_i_1/O, cell Top_/PC_/IRout_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[7]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[7]_LDC_i_1/O, cell Top_/PC_/IRout_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[8]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[8]_LDC_i_1/O, cell Top_/PC_/IRout_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net Top_/PC_/IRout_reg[9]_P is a gated clock net sourced by a combinational pin Top_/PC_/IRout_reg[9]_LDC_i_1/O, cell Top_/PC_/IRout_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 35 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./basys.bit...
+Writing bitstream ./basys.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 865.492 ; gain = 346.684
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file basys.hwdef
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 01:25:40 2019...

@@ -1,0 +1,255 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Thu Dec 12 01:02:07 2019
+| Host         : DESKTOP-MAVLEB0 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file basys_control_sets_placed.rpt
+| Design       : basys
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   202 |
+| Minimum Number of register sites lost to control set restrictions |   710 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             160 |           74 |
+| No           | No                    | Yes                    |              34 |           33 |
+| No           | Yes                   | No                     |              96 |           54 |
+| Yes          | No                    | No                     |             544 |          334 |
+| Yes          | No                    | Yes                    |            1024 |          407 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+------------------------------------+-------------------------------------------+------------------+----------------+
+|           Clock Signal           |            Enable Signal           |              Set/Reset Signal             | Slice Load Count | Bel Load Count |
++----------------------------------+------------------------------------+-------------------------------------------+------------------+----------------+
+|  Top_/PC_/IRout_reg[29]_P        |                                    | Top_/PC_/IRout_reg[29]_C                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[7]_P                   |                1 |              1 |
+|  Top_/IR_/register_reg[30][31]_8 |                                    |                                           |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[8]_P                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[0]_P         |                                    | Top_/PC_/IRout_reg[0]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[10]_P        |                                    | Top_/PC_/IRout_reg[10]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[11]_P        |                                    | Top_/PC_/IRout_reg[11]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[12]_P        |                                    | Top_/PC_/IRout_reg[12]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[13]_P        |                                    | Top_/PC_/IRout_reg[13]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[14]_P        |                                    | Top_/PC_/IRout_reg[14]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[15]_P        |                                    | Top_/PC_/IRout_reg[15]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[16]_P        |                                    | Top_/PC_/IRout_reg[16]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[17]_P        |                                    | Top_/PC_/IRout_reg[17]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[18]_P        |                                    | Top_/PC_/IRout_reg[18]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[19]_P        |                                    | Top_/PC_/IRout_reg[19]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[1]_P         |                                    | Top_/PC_/IRout_reg[1]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[20]_P        |                                    | Top_/PC_/IRout_reg[20]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[21]_P        |                                    | Top_/PC_/IRout_reg[21]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[22]_P        |                                    | Top_/PC_/IRout_reg[22]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[23]_P        |                                    | Top_/PC_/IRout_reg[23]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[24]_P        |                                    | Top_/PC_/IRout_reg[24]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[25]_P        |                                    | Top_/PC_/IRout_reg[25]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[26]_P        |                                    | Top_/PC_/IRout_reg[26]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[27]_P        |                                    | Top_/PC_/IRout_reg[27]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[28]_P        |                                    | Top_/PC_/IRout_reg[28]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[19]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[2]_P         |                                    | Top_/PC_/IRout_reg[2]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[30]_P        |                                    | Top_/PC_/IRout_reg[30]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[31]_P        |                                    | Top_/PC_/IRout_reg[31]_C                  |                1 |              1 |
+|  Top_/PC_/IRout_reg[3]_P         |                                    | Top_/PC_/IRout_reg[3]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[4]_P         |                                    | Top_/PC_/IRout_reg[4]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[5]_P         |                                    | Top_/PC_/IRout_reg[5]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[6]_P         |                                    | Top_/PC_/IRout_reg[6]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[7]_P         |                                    | Top_/PC_/IRout_reg[7]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[8]_P         |                                    | Top_/PC_/IRout_reg[8]_C                   |                1 |              1 |
+|  Top_/PC_/IRout_reg[9]_P         |                                    | Top_/PC_/IRout_reg[9]_C                   |                1 |              1 |
+|  CLK_IBUF_BUFG                   |                                    |                                           |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[10]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[0]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[18]_P                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[0]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[10]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[11]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[12]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[13]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[14]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[15]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[16]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[17]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[18]_C                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[9]_P                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[1]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[20]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[21]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[22]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[23]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[24]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[25]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[26]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[27]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[28]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[29]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[2]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[30]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[31]_C                  |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[3]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[4]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[5]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[6]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[7]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[8]_C                   |                1 |              1 |
+|  myCLK_BUFG                      |                                    | Top_/PC_/IRout_reg[9]_C                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[11]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[12]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[13]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[14]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[15]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[16]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[17]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[19]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[1]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[20]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[21]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[22]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[23]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[24]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[25]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[26]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[27]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[28]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[29]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[2]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[30]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[31]_P                  |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[3]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[4]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[5]_P                   |                1 |              1 |
+|  myCLK_BUFG                      | Top_/controlUnit_/IRWre            | Top_/PC_/IRout_reg[6]_P                   |                1 |              1 |
+|  DIV_/CLK                        |                                    | Top_/RegisterFile_/register_reg[31][31]_0 |                1 |              2 |
+|  n_0_1995_BUFG                   |                                    | Top_/IR_/AR[0]                            |                1 |              2 |
+|  Top_/IR_/E[0]                   |                                    |                                           |                1 |              3 |
+|  DIV_/CLK                        |                                    |                                           |                1 |              3 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[39][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[38][7]_1[0] |                                           |                2 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[37][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[36][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[35][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[34][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[33][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[32][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[31][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[30][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[2][7]_1[0]  |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[29][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[28][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[27][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[26][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[25][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[24][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[23][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[22][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[21][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[20][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[1][7]_5[0]  |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[19][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[18][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[17][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[15][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[14][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[16][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[13][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[12][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[11][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[10][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[0][7]_1[0]  |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/E[0]                 |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[9][7]_1[0]  |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[8][7]_1[0]  |                                           |                2 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[7][7]_1[0]  |                                           |                1 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[6][7]_1[0]  |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[62][7]_2[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[61][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[60][7]_2[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[5][7]_1[0]  |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[59][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[58][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[57][7]_1[0] |                                           |                2 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[56][7]_2[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[55][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[54][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[53][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[52][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[51][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[50][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[4][7]_5[0]  |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[49][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[48][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[47][7]_1[0] |                                           |                7 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[46][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[45][7]_1[0] |                                           |                3 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[44][7]_1[0] |                                           |                5 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[43][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[41][7]_1[0] |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[40][7]_1[0] |                                           |                6 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[3][7]_1[0]  |                                           |                4 |              8 |
+|  myCLK_BUFG                      | Top_/ALUoutDR/data_reg[42][7]_1[0] |                                           |                8 |              8 |
+|  n_0_1995_BUFG                   |                                    | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             30 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[9][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               16 |             32 |
+|  mRD                             |                                    |                                           |               17 |             32 |
+|  CLK_IBUF_BUFG                   |                                    | DIV_/clear                                |                8 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[10][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               10 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[11][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                9 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[12][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               10 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[13][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                8 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[14][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                9 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[15][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               12 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[16][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               12 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[17][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               10 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[18][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               11 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[19][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                6 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[1][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |                7 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[20][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                8 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[21][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                9 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[22][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               10 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[23][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               10 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[25][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               11 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[26][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[27][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |                8 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[28][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               19 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[29][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[2][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[30][31]_6[0] | Top_/RegisterFile_/register_reg[31][31]_0 |               17 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[31][31]_9[0] | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[3][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               17 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[4][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               16 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[5][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               17 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[6][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               17 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[7][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               16 |             32 |
+|  myCLK_BUFG                      | Top_/controlUnit_/nextPC_reg[31]_0 |                                           |               14 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[8][31][0]    | Top_/RegisterFile_/register_reg[31][31]_0 |               15 |             32 |
+|  myCLK_BUFG                      | Top_/IR_/register_reg[24][31][0]   | Top_/RegisterFile_/register_reg[31][31]_0 |               13 |             32 |
+|  myCLK_BUFG                      |                                    |                                           |               53 |            120 |
++----------------------------------+------------------------------------+-------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,50 @@
+`timescale 1ns/1ns 
+module Top(
+    input CLK,
+    input Reset,
+    output[31:0] PCout,
+    output[31:0] PCin,
+    output[4:0] reg1_addr,
+    output[31:0] ReadData1,
+    output[4:0] reg2_addr,
+    output[31:0] ReadData2,
+    output[31:0] result,
+    output[31:0] DataOut
+);
+    wire PCWre;
+    wire ALUSrcA;
+    wire ALUSrcB;
+    wire DBDataSrc;
+    wire RegWre;
+    wire InsMemRW;
+    wire mRD;
+    wire mWR;
+    wire RegDst;
+    wire ExtSel;
+    wire[2:0] ALUOp;
+    wire[1:0] PCSrc;
+    wire[31:0] IDataOut;
+    wire[4:0] WriteRegIn;
+    wire[31:0] DB;
+    wire[31:0] ALUAin;
+    wire[31:0] ALUBin;
+    wire zero;
+    wire sign;
+    wire[31:0] ExtendOut;
+
+    assign reg1_addr=IDataOut[25:21];
+    assign reg2_addr=IDataOut[20:16];
+
+    controlUnit controlUnit_(PCWre,ALUSrcA,ALUSrcB,DBDataSrc,RegWre,InsMemRW,mRD,mWR,RegDst,ExtSel,ALUOp,PCSrc,zero,IDataOut[31:26],IDataOut[5:0],sign);
+    ALU ALU_(ALUAin,ALUBin,ALUOp,sign,zero,result);
+    PC PC_(PCWre,PCin,CLK,Reset,PCout);
+    PCchoose PCchoose_(PCSrc,ExtendOut,PCout,IDataOut,PCin);
+    signzeroextend signzeroextend_(IDataOut[15:0],ExtSel,ExtendOut);  
+    RegisterFile RegisterFile_(CLK,RegWre,IDataOut[25:21],IDataOut[20:16],WriteRegIn,DB,ReadData1,ReadData2);
+    Mux32 Mux32_4(DBDataSrc,result,DataOut,DB);
+    Mux32 Mux32_2(ALUSrcA,ReadData1,{27'b000000000000000000000000000,IDataOut[10:6]},ALUAin);
+    Mux32 Mux32_3(ALUSrcB,ReadData2,ExtendOut,ALUBin);
+    Mux5 Mux5_1(RegDst,IDataOut[20:16],IDataOut[15:11],WriteRegIn);
+    DataMem DataMem_(CLK,mRD,mWR,result,ReadData2,DataOut);
+    insMEM insMEM_(InsMemRW,PCout,IDataOut);
+endmodule
